@@ -8,7 +8,9 @@ set showmatch		" show matching bracket
 set backspace=indent,eol,start	" always allow backspacing
 
 if has('syntax')
-    syntax on
+  syntax on
 endif
 
-filetype plugin indent on
+if has('filetype')
+  filetype plugin indent on
+endif
