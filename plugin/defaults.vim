@@ -7,10 +7,12 @@ set hlsearch		" highlight search terms
 set showmatch		" show matching bracket
 set backspace=indent,eol,start	" always allow backspacing
 
+filetype plugin indent on
 if has('syntax')
   syntax on
 endif
 
-if has('filetype')
-  filetype plugin indent on
+if has('wildmenu')
+  set wildmenu
+  set wildmode=list:longest
 endif
