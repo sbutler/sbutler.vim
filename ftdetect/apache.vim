@@ -1,5 +1,3 @@
-augroup filetypedetect
-
 func! s:StarSetf(ft)
   if expand("<amatch>") !~ g:ft_ignore_pat
     exe 'setf ' . a:ft
