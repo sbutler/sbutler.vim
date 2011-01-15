@@ -6,6 +6,7 @@ set ruler		" line numbers at the bottom
 set hlsearch		" highlight search terms
 set showmatch		" show matching bracket
 set backspace=indent,eol,start	" always allow backspacing
+set backupskip=/tmp/*,/private/tmp/*    " to make crontab -e work
 
 filetype plugin indent on
 if has('syntax')
