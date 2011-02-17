@@ -17,3 +17,8 @@ if has('wildmenu')
   set wildmenu
   set wildmode=list:longest
 endif
+
+if has('gui_running')
+  colorscheme desert
+endif
+
